@@ -1,0 +1,15 @@
+### Testar lista de balances (GET específico por account_id)
+GET http://localhost:3003/balances/<ACCOUNT_ID>
+Accept: application/json
+
+###
+
+### Testar com um account_id inválido
+GET http://localhost:3003/balances/invalid-id
+Accept: application/json
+
+###
+
+### Verificar se o endpoint retorna 404 para conta inexistente
+GET http://localhost:3003/balances/00000000-0000-0000-0000-000000000000
+Accept: application/json
