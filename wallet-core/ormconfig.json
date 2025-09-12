@@ -1,0 +1,6 @@
+{
+  "type": "postgres",
+  "url": "${DATABASE_URL}",
+  "synchronize": true,
+  "entities": ["src/*.entity.ts"]
+}
